@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Category = () => {
   return (
-    <div className="ml-2">
+    <div className="">
       {/* Category Text and Search */}
       <div className="flex justify-between">
         <span className="text-2xl font-indie ">Choose Category</span>
@@ -10,7 +10,7 @@ const Category = () => {
       </div>
 
       {/* Category Items */}
-      <div className="flex gap-4 mt-3  items-center">
+      <div className="flex gap-x-8 mt-3  items-center">
         <div className="bg-secondary text-white p-2 rounded-lg">
           <div className="relative h-10 w-10">
             <Image src="/images/categoryitems/coffee.png" alt="Coffee" fill />

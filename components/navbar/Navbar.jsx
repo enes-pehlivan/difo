@@ -8,63 +8,50 @@ import { BiBookContent } from "react-icons/Bi";
 
 const Navbar = () => {
   return (
-
-    // Ana Çerçeve 
-    <div className="flex flex-col w-[90px] h-screen  ml-2 ">
-
+    // Ana Çerçeve
+    <div className="flex flex-col h-screen justify-between items-center shadow-xl">
       {/* Logo Kısmı */}
 
-      <div className="mt-5 relative w-32 h-32 ">
-
-        <Image className="rounded-full" src="  " alt="işletme logo" fill />
-                       
+      <div className="mt-5 relative w-16 h-16 ">
+        <Image
+          className="rounded-full"
+          src="/images/cashier.jpg"
+          alt="Logo"
+          fill
+        />
       </div>
 
       {/* Menu-Kitchen-Orders Kısmı */}
 
-      <div className=" flex flex-col gap-5 place-content-center  mt-56 ">
-
-        <div className="hover:bg-secondary p-2  transition-all  rounded-lg  ">
-          <a href="#">
-            <BiBookContent size={40} />
-            <p>Menu </p>
-          </a>         
+      <div className=" flex flex-col gap-5  items-center justify-center ">
+        <div className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all cursor-pointer rounded-lg  ">
+          <BiBookContent size={25} />
+          <p>Menu </p>
         </div>
 
-        <div className="hover:bg-secondary p-2 transition-all  rounded-lg ">
-          <a href="#">
-            <GiKnifeFork size={40} />
-            <p>Kitchen</p>
-          </a>         
+        <div className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all  rounded-lg ">
+          <GiKnifeFork size={25} />
+          <p>Kitchen</p>
         </div>
 
-        <div className="hover:bg-secondary  p-4 transition-all  rounded-lg">          
-          <a href="#">
-            <RiFilePaper2Line   size={40} 
-            />
-            <p>Orders</p>
-          </a>          
+        <div className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all  rounded-lg">
+          <RiFilePaper2Line size={25} />
+          <p>Orders</p>
         </div>
-
       </div>
 
       {/* Settings-Logout kısmı */}
 
-      <div className="mt-44 ">
-        <div className="hover:bg-secondary p-2 transition-all  rounded-lg ">
-          <a href="#">
-            <FiSettings  size={40} />
-            <p>Settings</p>          
-          </a>        
+      <div className="flex flex-col gap-y-4">
+        <div className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all  rounded-lg ">
+          <FiSettings size={25} />
+          <p>Settings</p>
         </div>
 
-        <div className="hover:bg-secondary p-2 transition-all  rounded-lg  ">
-          <a href="#">
-            <IoMdExit size={40} />
-            <p>Logout</p>
-          </a>    
+        <div className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all  rounded-lg  ">
+          <IoMdExit size={25} />
+          <p>Logout</p>
         </div>
-
       </div>
     </div>
   );

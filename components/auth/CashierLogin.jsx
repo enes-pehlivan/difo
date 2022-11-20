@@ -4,7 +4,7 @@ import { GrNotification } from "react-icons/gr";
 
 const CashierLogin = () => {
   return (
-    <div className="flex gap-x-5">
+    <div className="flex gap-x-5 justify-center items-center mt-2 mb-5 border-2 border-double p-2 ">
       <div className="relative w-16 h-16">
         <Image
           src="/images/cashier.jpg"
