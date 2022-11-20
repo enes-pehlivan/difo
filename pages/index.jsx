@@ -1,17 +1,18 @@
 import React from "react";
+import CashierLogin from "../components/auth/CashierLogin";
+import Card from "../components/card/Card";
 import Category from "../components/category/Category";
 import Menu from "../components/Menu/Menu";
 import Navbar from "../components/navbar/Navbar";
-import Search from "../components/search/Search";
 
 const index = () => {
   return (
     <div>
-      <h2 className="text-4xl text-center font-extrabold">ENES</h2>
       <Navbar />
       <Category />
       <Menu />
-      <Search />
+      <CashierLogin />
+      <Card />
     </div>
   );
 };
