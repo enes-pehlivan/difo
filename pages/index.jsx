@@ -4,10 +4,10 @@ import Menu from "../components/Menu/Menu";
 import Navbar from "../components/navbar/Navbar";
 import Search from "../components/search/Search";
 
-const index = () => {
+export default function Index() {
   return (
     <div>
-      <h2 className="text-4xl text-center font-extrabold">ENES</h2>
+     
       <Navbar />
       <Category />
       <Menu />
@@ -16,4 +16,4 @@ const index = () => {
   );
 };
 
-export default index;
+
