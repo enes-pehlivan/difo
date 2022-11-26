@@ -5,6 +5,7 @@ import { IoMdExit } from "react-icons/Io";
 import { RiFilePaper2Line } from "react-icons/Ri";
 import { GiKnifeFork } from "react-icons/Gi";
 import { BiBookContent } from "react-icons/Bi";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -24,10 +25,21 @@ const Navbar = () => {
       {/* Menu-Kitchen-Orders Kısmı */}
 
       <div className=" flex flex-col gap-5  items-center justify-center ">
-        <div className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all cursor-pointer rounded-lg  ">
+        <Link
+          href="/table"
+          className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all  rounded-lg "
+        >
+          <GiKnifeFork size={25} />
+          <p>Table</p>
+        </Link>
+
+        <Link
+          href="/menu"
+          className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all cursor-pointer rounded-lg  "
+        >
           <BiBookContent size={25} />
           <p>Menu </p>
-        </div>
+        </Link>
 
         <div className="hover:bg-primary hover:text-white flex flex-col p-3 items-center justify-center transition-all  rounded-lg ">
           <GiKnifeFork size={25} />
